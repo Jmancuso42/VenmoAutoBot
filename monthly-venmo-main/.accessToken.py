@@ -4,8 +4,6 @@ import os
 from dotenv import load_dotenv
 from utils import get_env, env_vars, get_month, Venmo, Telegram
 
-#access_token = Client.get_access_token(username='jmancuso142@gmail.com',
- #                                       password='#uclid3an')
 
 load_dotenv()
 #os.getenv(key=venmo_api.)
