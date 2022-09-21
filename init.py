@@ -17,6 +17,7 @@ def main(now):
 
   access_token, chat_id, bot_token, e_friend_id, c_friend_id, m_friend_id, r_friend_id, mi_friend_id = actualVars
 
+  
   month = get_month(now)
   venmo = Venmo(access_token)
   telegram = Telegram(bot_token, chat_id)
@@ -49,11 +50,11 @@ def main(now):
 
   successfulRequests = []
   expectedRequests = len(friends)
-
+  day = datetime.strftime("%d")
   for friend in friends:
     name = friend["name"]
     id = friend["id"]
-    description = "That time of month again to shoot youtube ads dead, for the month of " + month + "— Sent by Joe's Robo-wage-slave"
+    description = f"It is {day} of {month}, which is also a day before youtube wants their blood money, so pay up by the 22nd <3" 
     amount = 3.60
     message = f"""Good news
 
