@@ -50,7 +50,7 @@ def main(now):
 
   successfulRequests = []
   expectedRequests = len(friends)
-  day = datetime.strftime("%d")
+  day = datetime.date
   for friend in friends:
     name = friend["name"]
     id = friend["id"]
