@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from notifiers import get_notifier
 from datetime import datetime
 
-from utils import get_env, env_vars, get_month, Venmo, Telegram
+from utils import get_env, env_vars, get_month, get_day, Venmo, Telegram
 
 def main(now):
   """
@@ -17,7 +17,7 @@ def main(now):
 
   access_token, chat_id, bot_token, e_friend_id, c_friend_id, m_friend_id, r_friend_id, mi_friend_id = actualVars
 
-  
+  day = get_day(now)
   month = get_month(now)
   venmo = Venmo(access_token)
   telegram = Telegram(bot_token, chat_id)
@@ -50,11 +50,11 @@ def main(now):
 
   successfulRequests = []
   expectedRequests = len(friends)
-  day = datetime.date
+  
   for friend in friends:
     name = friend["name"]
     id = friend["id"]
-    description = f"It is {day} of {month}, which is also a day before youtube wants their blood money, so pay up by the 22nd <3" 
+    description = f"It is {day} of {month}, which is riiight before youtube wants their blood money, so pay up by the 22nd <3" 
     amount = 3.60
     message = f"""Good news
 
