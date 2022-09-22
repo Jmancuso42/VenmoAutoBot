@@ -35,6 +35,7 @@ jobs:
         run: |
           python init.py
         env:
+          access_token: ${{ secrets.access_token}}
           VENMO_ACCESS_TOKEN: ${{ secrets.VENMO_ACCESS_TOKEN }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
