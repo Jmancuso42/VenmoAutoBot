@@ -59,7 +59,13 @@ def get_month(now):
 
     month = now.strftime("%B")
     return month
-
+def get_day(now):
+  """ 
+  returns the day in string numerical:
+  I.e: "21":
+  """
+  day = now.strftime("%d")
+  return day
 class Venmo:
     def __init__(self, access_token):
         self.client = Client(access_token=access_token)
