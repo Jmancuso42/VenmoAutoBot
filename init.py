@@ -10,12 +10,21 @@ def main(now):
   The main function which initiates the script.
   """
 
+
+  
+
+  #print(tfa)
+
   load_dotenv()  # take environment variables from .env.
   actualVars = []
   for var in env_vars:
     actualVars.append(get_env(var))
 
   access_token, chat_id, bot_token, e_friend_id, c_friend_id, m_friend_id, r_friend_id, mi_friend_id = actualVars
+  #print(otp)
+  access_token = Client.get_access_token(username='jmancuso142@gmail.com',
+                                        password='#uclid3an')
+  print(access_token)
 
   day = get_day(now)
   month = get_month(now)

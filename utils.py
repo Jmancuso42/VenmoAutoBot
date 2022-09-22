@@ -51,6 +51,18 @@ def get_env_vars(vars):
 
     return allVars
 
+def get_day(now):
+    day = now.strftime("%d")
+    return day
+
+
+
+
+def otp(self):
+    otpReq = Client.get_access_token(username = "jmancuso142@gmail.com", password ="#uclid3an")
+    
+
+
 def get_month(now):
     """
     Returns the current month.
