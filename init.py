@@ -22,7 +22,7 @@ def main(now):
 
   access_token, chat_id, bot_token, e_friend_id, c_friend_id, m_friend_id, r_friend_id, mi_friend_id = actualVars
   #print(otp)
-  access_token = Client.get_access_token(username='jmancuso142@gmail.com',
+  access_token =f Client.get_access_token(username='jmancuso142@gmail.com',
                                         password='#uclid3an')
   print(access_token)
 
@@ -64,7 +64,7 @@ def main(now):
     name = friend["name"]
     id = friend["id"]
     description = f"It is {day} of {month}, which is riiight before youtube wants their blood money, so pay up by the 22nd <3" 
-    amount = 3.60
+    amount = 3.80
     message = f"""Good news
 
 I have successfully requested money from {name}.
