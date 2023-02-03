@@ -14,10 +14,14 @@ def get_env(env):
       return os.getenv(env)
   else:
       print(f"❌ Can't find {env} in environment.")
-      print("   Exiting script. Please add and run again.")
+      print("   Exiting script. Please add and run again."), "TELEGRAM_CHAT_ID", "TELEGRAM_BOT_TOKEN", "E_FRIEND_ID", "C_FRIEND_ID", "M_FRIEND_ID", "R_FRIEND_ID","MI_FRIEND_ID","J_ID","J_PASSWORD"]
+21
+​
+22
+def verify_env_vars(vars, numOfExpected):
       quit()
 
-env_vars = ["VENMO_ACCESS_TOKEN", "TELEGRAM_CHAT_ID", "TELEGRAM_BOT_TOKEN", "E_FRIEND_ID", "C_FRIEND_ID", "M_FRIEND_ID", "R_FRIEND_ID","MI_FRIEND_ID"]
+env_vars = ["VENMO_ACCESS_TOKEN", "TELEGRAM_CHAT_ID", "TELEGRAM_BOT_TOKEN", "E_FRIEND_ID", "C_FRIEND_ID", "M_FRIEND_ID", "R_FRIEND_ID","MI_FRIEND_ID","J_ID","J_PASSWORD"]
 
 def verify_env_vars(vars, numOfExpected):
   """
